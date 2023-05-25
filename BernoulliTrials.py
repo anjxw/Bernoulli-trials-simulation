@@ -21,21 +21,21 @@ def BinomialDistribution(n, p):
 	return f
 
 def PlotHistogram(a, b, N):
-    x = np.arange(len(a))
-    fig, ax = plt.subplots(figsize=(8, 6))
-    w = 0.4
-    bar1 = ax.bar(x-w/2, a, w, align='center', alpha=0.8, label='Simulation', color='lightsteelblue', edgecolor='black')
-    bar2 = ax.bar(x+w/2, b, w, align='center', alpha=0.8, label='Binomial Distribution', color='mediumslateblue', edgecolor='black')
-    ax.set_xticks(x)
-    ax.set_title('Histogram (N={})'.format(N), fontsize=14)
-    ax.set_xlabel('Number of Successes', fontsize=12)
-    ax.set_ylabel('Relative Frequency', fontsize=12)
-    ax.legend()
-    ax.grid(True)
-    ax.set_facecolor('whitesmoke')
-    ax.tick_params(axis='both', labelsize=10)
-    plt.ylim([0, 0.3])
-    plt.show()
+    	x = np.arange(len(a))
+    	fig, ax = plt.subplots(figsize=(8, 6))
+    	w = 0.4
+    	bar1 = ax.bar(x-w/2, a, w, align='center', alpha=0.8, label='Simulation', color='lightsteelblue', edgecolor='black')
+    	bar2 = ax.bar(x+w/2, b, w, align='center', alpha=0.8, label='Binomial Distribution', color='mediumslateblue', edgecolor='black')
+    	ax.set_xticks(x)
+    	ax.set_title('Histogram (N={})'.format(N), fontsize=14)
+    	ax.set_xlabel('Number of Successes', fontsize=12)
+    	ax.set_ylabel('Relative Frequency', fontsize=12)
+    	ax.legend()
+    	ax.grid(True)
+    	ax.set_facecolor('whitesmoke')
+    	ax.tick_params(axis='both', labelsize=10)
+    	plt.ylim([0, 0.3])
+    	plt.show()
 
 
 def RunSimulation(n, p, N):
