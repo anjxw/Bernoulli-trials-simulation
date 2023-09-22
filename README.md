@@ -25,7 +25,8 @@ def BernoullisTrials(n, p, N):
 
 The histogram shows relative frequencies obtained by simulating Bernoulli experiments (blue) and the actual binomial distribution probabilities (orange).
 
-![simulation0]](Charts/simulation0%20-%201000%20trials.png)
+![simulation0]](Charts/simulation0-1000%20trials.png)
+
 
 ### Results
 
