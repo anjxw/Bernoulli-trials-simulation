@@ -1,4 +1,3 @@
-# Anja Vujacic 2021/0307
 
 import math
 import numpy as np
